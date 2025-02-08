@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+header {
+    background-color: #3e2723;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    margin: 0;
+    background-image: url('imagem/logo3.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    width: 290px;
+    height: 60px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover {
+    color: #DAC8B3;
+}
+
+.intro {
+    max-width: 1480px;
+    margin-top: 50px;
+    background-image: url('imagem/cafeteria2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.intro .btn {
+    background-color: #3e2723;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.intro .btn a:hover {
+    background-color: black;
+}
+
+.menu {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #DAC8B3;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #EBDDCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; 
+    object-fit: contain;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.sobre {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('imagem/cafeteria0.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.sobre p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.sobre img {
+    width: 100%;
+}
+
+.contato {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #DAC8B3;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #3e2723;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contato button:hover {
+    background-color: #5d4037;
+}
+
+footer {
+    max-width: 1480px;
+    background-color: #3e2723;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.contact-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+    background-color: #DAC8B3;
+}
+
+.contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c2c2c;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+    .menu-items {
+        flex-direction: row;
+    }
+
+    .menu-items .item {
+        width: 30%;
+    }
+
+    .intro-text h2 {
+        font-size: 3rem;
+    }
+
+    .intro-text p {
+        font-size: 1.5rem;
+    }
+
+    .menu-items .item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: row;
+    }
+
+    .menu-items .item {
+        width: 45%;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .menu-items .item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items .item {
+        width: 90%; 
+    }
+
+    .menu-items .item img {
+        height: 180px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+    }
+
+    .menu.active ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #3e2723;
+    }
+
+    .menu ul li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 450px) and (min-width: 320px) {
+   
+    header {
+        height: 115px; 
+        padding: 10px 15px; 
+    }
+
+    
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 5px; 
+        padding: 0;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin: 0;
+    }
+
+    header ul li {
+        margin: 0;
+    }
+
+    header ul li a {
+        font-size: 0.8rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 8px; 
+    }
+
+    header ul li a:hover {
+        color: #DAC8B3;
+    }
+}
