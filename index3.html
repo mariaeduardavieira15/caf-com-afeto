@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Café com Afeto</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color:  #DAC8B3;
+}
+header {
+    max-width:1480px;
+    background-color: #3e2723; 
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo  {
+    background-image: url('imagem/logo3.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    width :250px;
+    height : 80px
+    
+}
+.home{
+    max-width:1480px;
+}
+
+.home ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.home ul li {
+    display: inline;
+}
+
+.home ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.home ul li a:hover {
+    color: #DAC8B3;
+}
+#compra {
+    padding: 50px 20px;
+    color: #3e2723;
+    text-align: center;
+    margin-top: 80px;
+    background-color:#DAC8B3;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    background-color: #EBDDCC;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.produto button {
+    padding: 10px;
+    background-color:#896E59;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color:#3e2723 ;
+}
+footer {
+    max-width:1480px;
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+.contact-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+    background-color:#DAC8B3;
+}
+
+.contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c2c2c;
+}
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>.</h1>
+            </div>
+            <div class="home">
+                <ul>
+                    <li><a href="#compra" class="btn-acao">Comprar</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="compra">
+        <h2>Escolha seu Café</h2><br>
+        <div class="produtos">
+            <div class="produto">
+                <img src="venda/cafe3.jpeg" alt="Café Arábica">
+                <h3>Café Macchiato, 500g</h3>
+                <p>R$ 30,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/pacotinhos.jpeg" alt="Café Robusta">
+                <h3>Café Cappuccino, 30g</h3>
+                <p>R$ 5,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/caixa.jpeg" alt="Café Espresso">
+                <h3>Café Cappuccino, 1800g </h3>
+                <p>R$ 150,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/amor.jpeg" alt="Café Arábica">
+                <h3>Café Espresso, 300g</h3>
+                <p>R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/pacote.jpeg" alt="Café Arábica">
+                <h3>Café Latter, 300g</h3>
+                <p>R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/pacote2.jpeg" alt="Café Arábica">
+                <h3>Café Arábica, 300g</h3>
+                <p>R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/cafe4.jpeg"alt="Café Arábica">
+                <h3>Café Gelado, 150ml</h3>
+                <p>R$ 10,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="venda/bolos.jpeg" alt="Café Arábica">
+                <h3>Bolo de café com sorvete, 200g</h3>
+                <p>R$ 30,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p><strong>Endereço:</strong> Rua do Café, 123, Centro.</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Email:</strong> contato@cafecomafeto.com</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Café com Afeto - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
